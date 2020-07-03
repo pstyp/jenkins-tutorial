@@ -1,11 +1,6 @@
 pipeline{
         agent any
         stages{
-            stage('Clone'){
-                steps{
-                  sh 'git clone https://gitlab.com/qacdevops/chaperootodo_client'
-                }
-            }
             stage('Install'){
                 steps{
                   sh 'sudo apt install -y curl jq'
